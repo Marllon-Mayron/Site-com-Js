@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Js Learn</title>
+</head>
+<body>
+    <header><h1>Aprendendo JS</h1></header>
+    <div class="aContainer">
+        <div class="a1">
+            Aqui temos modificamos um elemento com o js:
+            <h4 id="elementoVazio"></h4>
+            <button type="button" onclick='document.getElementById("elementoVazio").innerHTML = "Comando linkado no proprio botão!",document.getElementById("elementoVazio").style.display = "block";'>Executar</button>
+        </div>
+        <div class="a1">
+            Modificar outro elemento com <p class="destacar">funcao</p> js:
+            <h4 id="elementoVazio2"></h4>
+            <button type="button" onclick='trocarElemento()'>Executar</button>
+        </div>
+        <div id="corModificavel" class="a1">
+            Consigo modificar o estilo da página! js:
+            <h4 id="elementoVazio3"></h4>
+            <button type="button" onclick='trocarCor()'>Executar</button>
+            
+        </div>
+    </div>
+    <div class="aContainer">
+        <h3>Agora veremos algumas opcoes de output</h3>
+        <h4>e botoes coloridos =)</h4>
+        <div class="a2">
+            
+            <div class="btnOutputs">
+                <button type="button" onclick='outputWrite()'>Output Write</button>
+                <button type="button" onclick='windowAlert()'>Window Alert</button>
+                <button type="button" onclick='consoleLog()'>ConsoleAlert</button>
+            </div>
+        </div>
+    </div>
+    
+    
+    <button type="button" onclick='apagarElemento()'>Reverter</button>
+    
+
+</body>
+</html>
